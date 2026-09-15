@@ -12,7 +12,7 @@ namespace glm
 		float height; // The height along the Y axis; From edge to edge
 	};
 	
-	bool get_sheet_intersection_segment(const ray& ray, const sheet& sheet, glm::vec2& start, glm::vec2& end) {
+	inline bool get_sheet_intersection_segment(const ray& ray, const sheet& sheet, glm::vec2& start, glm::vec2& end) {
 		float hw = sheet.width / 2.0f;
 		float hh = sheet.height / 2.0f;
     
