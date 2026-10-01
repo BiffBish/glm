@@ -12,6 +12,7 @@ namespace glm
         
         transform(glm::vec3 pos, glm::quat rot) : position(pos), rotation(rot) {};
         transform(){};
+        transform(const transform&) = default;
 
         // Asignment operator
         transform& operator=(const transform& other) {
